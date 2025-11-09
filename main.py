@@ -22,3 +22,12 @@ for index,course in enumerate(courses):
 
 course_str = ','.join(courses)
 print(course_str)
+
+
+
+# Falsy Values
+# False
+# None
+# Zero of Any Numerical Type
+# Any Empty Sequence -> [],(),{},''
+# Any Empty Mapping -> {}
