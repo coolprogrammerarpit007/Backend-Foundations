@@ -31,3 +31,6 @@ print(course_str)
 # Zero of Any Numerical Type
 # Any Empty Sequence -> [],(),{},''
 # Any Empty Mapping -> {}
+
+
+# An In-depth look at pip -> python package management system
