@@ -212,3 +212,15 @@ def emp_sort(emp):
 # sorted_employees = sorted(emps,key=emp_sort,reverse=True)
 sorted_employees = sorted(emps,key=lambda emp: emp.salary,reverse=True)
 # print(sorted_employees)
+
+
+# string formatting
+print('1 MB is Equal To: {:,.2f} Bytes'.format(1000**2))    
+
+import datetime
+
+my_date = datetime.datetime(2025,11,11,2,30,45)
+# print(my_date)
+
+sentence = '{}'.format(my_date.strftime("%B %d, %Y"))
+print(sentence)
