@@ -152,20 +152,63 @@ my_set = {number for number in numbers}
 
 # Generator Expressions
 
-nums = [1,2,3,4,5,6,7,8,9,10]
-my_gen = (num*num for num in nums)
-# print(my_gen)
+# nums = [1,2,3,4,5,6,7,8,9,10]
+# my_gen = (num*num for num in nums)
+# # print(my_gen)
 
-for num in my_gen:
-    print(num)
+# for num in my_gen:
+#     print(num)
 
 # generators 
 
-def my_generator():
-    for i in range(5):
-        yield i  # instead of return
+# def my_generator():
+#     for i in range(5):
+#         yield i  # instead of return
  
-gen = my_generator()
+# gen = my_generator()
 
-for value in gen:
-    print(value)
+# for value in gen:
+    # print(value)
+
+
+# Sorting Lists,Tuples and Objects in Python
+
+li = [9,1,8,2,7,3,6,4,5]
+# s_li = sorted(li,reverse=True)
+# print(s_li)
+
+# In sorted function we can pass any Iterable
+
+new_list = [-6,-5,-4,1,2,3]
+# print(new_list)
+
+# To sort this list based on abs value
+s_li = sorted(new_list,key=abs)
+# print(s_li)
+
+
+class Employee:
+    def __init__(self,name,age,salary):
+        self.name = name
+        self.age = age
+        self.salary = salary
+        
+    def __repr__(self):
+        return '{},{},{}'.format(self.name,self.age,self.salary)
+    
+    
+emp1 = Employee('Arpit',25,45000)
+emp2 = Employee('Mohit',24,55000)
+emp3 = Employee('Kishan',24,55000)
+
+# print(emp1)
+
+emps = [emp1,emp2,emp3]
+
+def emp_sort(emp):
+    return emp.salary
+
+
+# sorted_employees = sorted(emps,key=emp_sort,reverse=True)
+sorted_employees = sorted(emps,key=lambda emp: emp.salary,reverse=True)
+# print(sorted_employees)
