@@ -220,7 +220,9 @@ print('1 MB is Equal To: {:,.2f} Bytes'.format(1000**2))
 import datetime
 
 my_date = datetime.datetime(2025,11,11,2,30,45)
+date = datetime.date(2025,4,13)
+print(date)
 # print(my_date)
 
-sentence = '{}'.format(my_date.strftime("%B %d, %Y"))
-print(sentence)
+sentence = '{}'.format(my_date.strftime("%B %d %A, %Y"))
+# print(sentence)
