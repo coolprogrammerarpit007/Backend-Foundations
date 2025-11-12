@@ -148,7 +148,22 @@
 
 # copying a image file and writing to another file
 
-with open('dog.png','rb') as reader:
-    with open('dog_copy.png','wb') as writer:
-        for data in reader:
-            writer.write(data)
+# with open('dog.png','rb') as reader:
+#     with open('dog_copy.png','wb') as writer:
+#         for data in reader:
+#             writer.write(data)
+
+
+# A closure in Python is a nested function that remembers and has access to variables from its enclosing scope, even after the enclosing function has finished executing. This allows the inner function to "close over" those variables, effectively carrying their state with it. 
+
+# How closures work:
+# When an outer function returns an inner function that references variables from the outer function's scope, Python creates a "cell" object to store these variables. This cell object is then associated with the returned inner function. When the inner function is later called, it can access the values stored in these cell objects, even though the outer function is no longer active.
+
+
+# def multipler(num):
+#     def multiplexer(x):
+#         return num * x
+#     return multiplexer
+
+# multiplied_by_3 = multipler(3)
+# print(multiplied_by_3(25))
