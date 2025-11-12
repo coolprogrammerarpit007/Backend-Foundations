@@ -46,3 +46,24 @@ for index,f in enumerate(files,start=1):
     # rename file to new name
     os.rename(f,new_file_name)
 
+# Random Module
+
+import random
+
+value = random.random()
+# print(value)
+
+random_number = random.randint(1,50)
+# print(random_number)
+
+
+# random.choice()
+
+# random.choices()
+
+colors = ['Red','Green','Blue']
+result = random.choices(colors,weights=[20,20,2],k=50)
+# print(result)
+
+
+# random.sample(list(),k=number) -> it will generate list of n number of different values and everytime it will be different
