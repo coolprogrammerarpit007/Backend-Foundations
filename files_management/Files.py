@@ -167,3 +167,6 @@
 
 # multiplied_by_3 = multipler(3)
 # print(multiplied_by_3(25))
+
+
+# Automation using Python
