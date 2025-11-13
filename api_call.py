@@ -36,23 +36,37 @@ from requests.exceptions import HTTPError
 #     else:
 #         print("Success")
 
-try:
-    response = requests.get("https://api.github.com/search/repositories",params={"q": "language:python", "sort": "stars", "order": "desc"})
-    json_response = response.json()
-    popular_repos = json_response['items']
+# try:
+#     response = requests.get("https://api.github.com/search/repositories",params={"q": "language:python", "sort": "stars", "order": "desc"})
+#     json_response = response.json()
+#     popular_repos = json_response['items']
     
-    for repo in popular_repos[:3]:
-        print(f"Name: {repo['name']}")
-        print(f"Description: {repo['description']}")
-        print(f"Stars: {repo['stargazers_count']}\n")   
-    response.raise_for_status()
+#     for repo in popular_repos[:3]:
+#         print(f"Name: {repo['name']}")
+#         print(f"Description: {repo['description']}")
+#         print(f"Stars: {repo['stargazers_count']}\n")   
+#     response.raise_for_status()
     
-except HTTPError as err:
-    print(f"HTTP Error Occurred: {err}")
+# except HTTPError as err:
+#     print(f"HTTP Error Occurred: {err}")
     
-except Exception as err:
-    print(f"Other Error Occurred: {err}")
+# except Exception as err:
+#     print(f"Other Error Occurred: {err}")
     
-else:
-    print("Success!")
+# else:
+#     print("Success!")
     
+    
+first_name = 'Arpit'
+last_name = 'Mishra'
+
+sentence = f'My name is {first_name} {last_name}'
+# print(sentence)
+
+from datetime import datetime,date
+
+birthday = date(2025,5,20)
+# print(birthday)
+
+sentence_user = f'My Birthday is: {birthday.strftime("%B, %d %Y")}'
+print(sentence_user)
