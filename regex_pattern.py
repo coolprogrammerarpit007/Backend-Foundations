@@ -28,3 +28,6 @@ x = re.search("^The.*Spain$",txt)
 # ()	Capture and group	 	 
 
 
+# Regex Pattern Matching
+
+
